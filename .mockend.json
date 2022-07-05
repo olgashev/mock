@@ -1,21 +1,11 @@
 {
   "Feedback": {
-    "title": {
-      "loremWords": { 
-        "minLength": 5, "maxLength": 10 
-      }
-    },
+    "title": { "loremWords": { "minLength": 100, "maxLength": 150 } },
     "processed": { "boolean": {}  },
-    "company": { "regexp": "[A-Z][a-z]{10,20}" },
+    "company": { "regexp": "[A-Z][a-z]{5,15}" },
     "source": { "string": [ "email", "slack"]},
-    "sender": {
-      "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
-    },
-    "description": {
-      "loremSentences": { 
-        "minLength": 100, "maxLength": 200 
-      }
-    },
+    "sender": { "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}" },
+    "description": { "loremParagraphs": { "minLength": 300, "maxLength": 500 } },
     "createdAt": {
       "dateTime": {
         "min": "2022-03-01T00:00:00Z",
