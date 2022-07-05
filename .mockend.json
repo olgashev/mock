@@ -2,7 +2,7 @@
   "Feedback": {
     "title": { "loremWords": { "minLength": 50, "maxLength": 100 } },
     "processed": { "boolean": {}  },
-    "company": { "regexp": "[A-Z][a-z]{5,15}" },
+    "company": { "string": ["Lorem Ltd.", "Metal Ltd.", "Marketing Ltd.", "Computers Ltd." ] },
     "source": { "string": [ "email", "slack"]},
     "sender": { "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}" },
     "description": { "loremParagraphs": { "minLength": 500, "maxLength": 1000 } },
