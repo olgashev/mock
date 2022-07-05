@@ -7,7 +7,7 @@
     },
     "processed": { "boolean": {}  },
     "company": { "loremWord": {} },
-    "source": "email",
+    "source": { "string": [ "email", "slack"]},
     "sender": {
       "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
     },
