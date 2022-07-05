@@ -5,6 +5,22 @@
         "minLength": 5, "maxLength": 10 
       }
     },
-    "processed": { "boolean": {}  }
+    "processed": { "boolean": {}  },
+    "company": { "loremWord": {} },
+    "source": "email",
+    "sender": {
+      "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
+    },
+    "description": {
+      "loremSentences": { 
+        "minLength": 100, "maxLength": 200 
+      }
+    },
+    "createdAt": {
+      "dateTime": {
+        "min": "2022-03-01T00:00:00Z",
+        "max": "2022-07-31T23:59:59Z"
+      }
+    }
   }
 }
