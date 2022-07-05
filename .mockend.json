@@ -1,9 +1,14 @@
 {
-  "Posts": {
-    "title": {
-      "loremWords": { 
-        "minLength": 5, "maxLength": 10 
-      }
+  "Feedbacks": {
+    "title": { "string": {} },
+    "comments": {
+      "hasMany": "Comment"
+    }
+  },
+  "Comment": {
+    "body": { "string": {} },
+    "post": {
+      "belongsTo": "Post"
     }
   }
 }
